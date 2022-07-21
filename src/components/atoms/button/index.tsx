@@ -1,10 +1,17 @@
 import React from "react";
+import {Button as MUIButton} from '@mui/material';
 
-const Button = () => {
+interface ButtonProps {
+    variant: "text" | "outlined" | "contained";
+    children: string;
+    onClick?: () => void;
+}
+
+const Button = ({variant, children, onClick}: ButtonProps) => {
     return (
-        <div>
-
-        </div>
+        <MUIButton variant={variant} onClick={onClick}>
+            {children}
+        </MUIButton>
     )
 };
 

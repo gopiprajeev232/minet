@@ -1,10 +1,20 @@
+import { Select } from "@mui/material";
 import React from "react";
 
-const Dropdown = () => {
-    return (
-        <div>
+interface DropdownData {
+    key: string;
+    value: string;
+}
 
-        </div>
+interface DropdownProps {
+    data: DropdownData[];
+}
+
+const Dropdown = ({data}: DropdownProps) => {
+    return (
+        <Select>
+            {data}
+        </Select>
     )
 }
 

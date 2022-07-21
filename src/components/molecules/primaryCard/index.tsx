@@ -1,10 +1,25 @@
+import { Grid } from "@mui/material";
 import React from "react";
 
-const PrimaryCard = () => {
+interface PrimaryCardProps {
+    coinName: string;
+    coinShortForm: string;
+    price: string;
+    percentChange: string;
+}
+
+const PrimaryCard = ({coinName, coinShortForm, price, percentChange}: PrimaryCardProps) => {
     return (
-        <div>
-        
-        </div>
+        <Grid>
+            <Grid item>
+                {coinName}
+                {coinShortForm}
+            </Grid>
+            <Grid item>
+                {price}
+                {percentChange}
+            </Grid>
+        </Grid>
     )
 }
 

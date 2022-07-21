@@ -1,10 +1,16 @@
+import { Grid } from "@mui/material";
 import React from "react";
+import Dropdown from "../../atoms/dropdown";
 
-const DeliverySpeed = () => {
+interface DeliverySpeedProps {
+    data: React.ReactNode[];
+}
+
+const DeliverySpeed = ({data}: DeliverySpeedProps) => {
     return (
-        <div>
-
-        </div>
+        <Grid>
+          <Dropdown data={data} /> 
+        </Grid>
     )
 }
 

@@ -1,10 +1,13 @@
 import React from "react";
+import {Chip as MUIChip} from '@mui/material';
 
-const Chip = () => {
+interface ChipProps {
+    label: string;
+}
+
+const Chip = ({label}: ChipProps) => {
     return (
-        <div>
-
-        </div>
+        <MUIChip label={label} />
     )
 }
 

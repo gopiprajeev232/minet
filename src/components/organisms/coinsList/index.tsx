@@ -2,9 +2,9 @@ import React from "react";
 
 const CoinsList = () => {
     return (
-        <div>
-
-        </div>
+        <DataGrid>
+            {/* Map data to the data grid */}
+        </DataGrid>
     )
 }
 

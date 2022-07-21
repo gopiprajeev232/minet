@@ -1,10 +1,13 @@
 import React from "react";
+import {Typography as MUITypography, TypographyProps} from '@mui/material';
 
-const Typography = () => {
+interface TypographyProperties extends TypographyProps {
+    children: React.ReactNode;
+}
+
+const Typography = ({children, ...props}: TypographyProperties) => {
     return (
-        <div>
-
-        </div>
+        <MUITypography {...props}>{children}</MUITypography>
     );
 };
 

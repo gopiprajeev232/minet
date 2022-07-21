@@ -1,10 +1,12 @@
 import React from "react";
 
-const Image = () => {
-    return (
-        <div>
+interface ImageProps {
+    imgSrc: string;
+}
 
-        </div>
+const Image = ({imgSrc}: ImageProps) => {
+    return (
+        <img src={imgSrc} alt="img" />
     )
 }
 
